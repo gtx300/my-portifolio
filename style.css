@@ -841,30 +841,69 @@ texto à esquerda e círculo decorativo à direita. */
 /* Rodapé centralizado, separado do restante da página por uma linha rosa. */
 footer {
   display: grid;
-  min-height: 96px;
-  padding: 20px 16px;
-  place-items: center;
-  gap: 5px;
+  justify-items: center;
+  gap: 16px;
+  padding: 36px 8%;
   border-top: 1px solid var(--line);
   background: var(--surface);
-}
-
-footer .footer__brand {
-  margin: 0;
-  font: 700 16px/.85 "Roboto Mono", monospace;
-  text-align: center;
-}
-
-footer .footer__brand img {
-  width: 80px;
-  height: auto;
-  filter: drop-shadow(0 0 4px rgba(232, 61, 111, .75)) drop-shadow(0 0 10px rgba(232, 61, 111, .35));
-  transition: filter .25s ease;
 }
 
 footer small {
   color: var(--muted);
   font-size: 10px;
+}
+
+.contact-card {
+  width: min(100%, 760px);
+  padding: 22px 24px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--card-bg);
+  text-align: center;
+}
+
+.contact-card .eyebrow {
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.contact-card h2 {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.contact-card__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-card__links a {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid rgba(232, 61, 111, .45);
+  border-radius: 4px;
+  color: var(--text);
+  font: 500 11px "Roboto Mono", monospace;
+  text-decoration: none;
+  transition: background-color .25s ease, border-color .25s ease, transform .25s ease;
+}
+
+.contact-card__links a:hover,
+.contact-card__links a:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-card__links .icon {
+  width: 17px;
+  height: 17px;
 }
 
 body.light-mode footer {
@@ -876,8 +915,17 @@ body.light-mode footer small {
   color: var(--button-bg);
 }
 
-body.light-mode footer .footer__brand img {
-  filter: brightness(0) saturate(100%) invert(31%) sepia(67%) saturate(2200%) hue-rotate(314deg) brightness(88%) contrast(91%);
+body.light-mode .contact-card__links a {
+  border-color: var(--button-bg);
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+body.light-mode .contact-card__links a:hover,
+body.light-mode .contact-card__links a:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
 }
 
 /* Ajustes para tablets e telas médias. */
@@ -966,6 +1014,10 @@ body.light-mode footer .footer__brand img {
   h1,
   h2 {
     font-size: 28px;
+  }
+
+  .contact-card {
+    padding: 20px;
   }
 }
 
