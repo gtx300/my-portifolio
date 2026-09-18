@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Sacola com lista de compras</title>
+  <desc id="desc">Ilustracao desenhada de uma sacola de compras com uma lista marcada.</desc>
+  <rect width="900" height="520" fill="#fff3e6"/>
+  <path d="M0 430c150-48 270 30 430-12s282-42 470 5v97H0Z" fill="#ffd6b3"/>
+  <g fill="none" stroke="#332d35" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M270 170c0-86 72-128 180-128s180 42 180 128" stroke-width="18"/>
+    <path d="M190 145h520l-42 310H232Z" fill="#f28f61" stroke-width="10"/>
+    <path d="M235 178h430" stroke="#d65f4b" stroke-width="8"/>
+    <path d="M324 242h28l-12 12-16-12ZM324 294h28l-12 12-16-12ZM324 346h28l-12 12-16-12Z" fill="#62b66f" stroke-width="5"/>
+    <path d="M382 244h155M382 296h155M382 348h155" stroke-width="8"/>
+    <path d="m329 239 8 10 18-22M329 291l8 10 18-22M329 343l8 10 18-22" stroke="#fff8f0" stroke-width="6"/>
+  </g>
+  <circle cx="690" cy="115" r="30" fill="#62b66f"/>
+  <path d="m675 115 10 10 20-23" fill="none" stroke="#fff8f0" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+</svg>

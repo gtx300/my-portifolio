@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Jogo da cobrinha</title>
+  <desc id="desc">Uma cobra verde formada por segmentos em uma grade escura, próxima de uma maca vermelha.</desc>
+  <rect width="900" height="520" fill="#101820"/>
+  <g stroke="#1e3440" stroke-width="2" opacity=".85">
+    <path d="M0 52h900M0 104h900M0 156h900M0 208h900M0 260h900M0 312h900M0 364h900M0 416h900M0 468h900"/>
+    <path d="M52 0v520M104 0v520M156 0v520M208 0v520M260 0v520M312 0v520M364 0v520M416 0v520M468 0v520M520 0v520M572 0v520M624 0v520M676 0v520M728 0v520M780 0v520M832 0v520"/>
+  </g>
+  <path d="M182 364h52v-52h52v-52h52v52h52v52h104v-52h52v-52h52v-52h52" fill="none" stroke="#62d84e" stroke-width="42" stroke-linecap="square" stroke-linejoin="round"/>
+  <path d="M182 364h52v-52h52v-52h52v52h52v52h104v-52h52v-52h52v-52h52" fill="none" stroke="#a5f36a" stroke-width="26" stroke-linecap="square" stroke-linejoin="round"/>
+  <rect x="650" y="106" width="42" height="42" rx="8" fill="#f04f4f"/>
+  <path d="M671 106c-2-18 9-27 24-30" fill="none" stroke="#62d84e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="682" cy="205" r="6" fill="#101820"/>
+  <circle cx="682" cy="227" r="6" fill="#101820"/>
+</svg>

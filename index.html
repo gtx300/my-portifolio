@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Informações que o navegador usa, mas que não aparecem na página. -->
+  <meta charset="UTF-8" />
+  <!-- Faz o layout se adaptar corretamente a telas de celular. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wendel Santos</title>
+  <!-- Carrega as fontes usadas no design a partir do Google Fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Conecta este HTML às regras de aparência do arquivo CSS. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- <script src="index.js"</script> -->
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z" /></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3" /><path d="M5 20a7 7 0 0 1 14 0" /></symbol>
+    <symbol id="icon-skills" viewBox="0 0 24 24"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z" /><path d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z" /></symbol>
+    <symbol id="icon-qualification" viewBox="0 0 24 24"><path d="M4 5h16v14H4z" /><path d="M8 9h8M8 13h5" /></symbol>
+    <symbol id="icon-projects" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7L21 9.6l-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z" /></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M15 22v-3.5c0-1-.4-1.8-1.1-2.3 3.7-.4 6.1-1.8 6.1-6.2a4.8 4.8 0 0 0-1.3-3.4A4.4 4.4 0 0 0 18.6 3s-1.1-.4-3.6 1.3a12.4 12.4 0 0 0-6 0C6.5 2.6 5.4 3 5.4 3a4.4 4.4 0 0 0-.1 3.6A4.8 4.8 0 0 0 4 10c0 4.4 2.4 5.8 6.1 6.2-.7.5-1.1 1.2-1.1 2.3V22" /><path d="M9 18c-4 .9-4-2-5.5-2" /></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M6 9v9M6 5v.1M10 18v-5a3 3 0 0 1 6 0v5M10 9v9M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /></symbol>
+  </svg>
+  <input class="intro-toggle" type="checkbox" id="entrar" />
+  <section class="welcome-screen" aria-labelledby="welcome-title" role="button" tabindex="0" aria-label="Entrar no portfólio">
+    <div class="welcome-screen__content">
+      <p class="eyebrow">Portfólio pessoal</p>
+      <h1 id="welcome-title">Wendel</h1>
+      <label class="touch-prompt" for="entrar">
+        <span class="touch-prompt__icon">↓</span>
+        <span>Toque na tela para entrar</span>
+      </label>
+    </div>
+  </section>
+
+  <!-- Contêiner visual de toda a página do portfólio. -->
+  <div class="portfolio">
+    <!-- Cabeçalho: reúne a navegação e a apresentação principal do site. -->
+    <header>
+      <!-- Menu que leva até as seções da própria página pelos IDs. -->
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#inicio">
+          Home
+        </a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#qualificacoes">Qualificações</a>
+        <a href="#projetos">Projetos</a>
+        <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo claro">
+          <span class="theme-toggle__track" aria-hidden="true"><span class="theme-toggle__thumb"></span></span>
+        </button>
+      </nav>
+
+      <!-- Apresentação principal da pessoa dona do portfólio. -->
+      <div class="hero" id="inicio">
+      <figure class="photo-perfil">
+        <img src="./image/photo_perfil.png" alt="Foto de Wendel" />
+      </figure>
+      <div class="hero__content">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1><span>Wendel</span></h1>
+        <p class="intro">Desenvolvedor em formação, apaixonado por transformar ideias em experiências digitais simples, acessíveis e bonitas.</p>
+        <p class="social-title">Acesse minhas redes:</p>
+        <!-- Lista de links externos de contato. Troque # pelos seus endereços. -->
+        <nav class="social-links" aria-label="Redes sociais">
+          <ul>
+            <li><a href="https://github.com/gtx300/" aria-label="Visitar GitHub"><svg class="icon"><use href="#icon-github" /></svg> GitHub</a></li>
+            <li><a href="https://linkedin.com/in/wendel-santos-2197b1253/" aria-label="Visitar LinkedIn"><svg class="icon"><use href="#icon-linkedin" /></svg> LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal da página: apresentação, habilidades e projetos. -->
+    <main>
+      <!-- Seção que apresenta suas tecnologias e certificados. -->
+      <section class="skills" id="habilidades" aria-labelledby="titulo-habilidades">
+        <div class="my-skills">
+          <p class="eyebrow">Eu uso essas</p>
+          <h2 id="titulo-habilidades">Tecnologias</h2>
+          <p>Estou construindo minha base em desenvolvimento web, mas específicamente em back-end com o intuito de sempre estar buscando aprender tecnologias novas para aprimorar meu conhecimento e habilidade para criar soluções melhores.</p>
+          <a class="outline-button" href="#">Certificados</a>
+        </div>
+        <div class="skills-icons" aria-label="Tecnologias: HTML, CSS e JavaScript">
+          <div class="skill-card skill-card--html">
+            <svg class="skill-icon skill-icon--html" viewBox="0 0 24 24" role="img" aria-label="HTML5" tabindex="0">
+              <path d="M3 2h18l-1.6 18L12 22l-7.4-2L3 2Z" />
+              <path d="M7 6h10l-.3 3H8l.2 2h8.3l-.7 6-3.8 1-3.8-1-.2-2.5h3l.1.8.9.3.9-.3.2-1.5H7.4L7 6Z" />
+            </svg>
+            <span>HTML</span>
+          </div>
+          <div class="skill-card skill-card--css">
+            <svg class="skill-icon skill-icon--css" viewBox="0 0 24 24" role="img" aria-label="CSS3" tabindex="0">
+              <path d="M3 2h18l-1.6 18L12 22l-7.4-2L3 2Z" />
+              <path d="M7 6h10l-.3 3H8l.2 2h8.3l-.7 6-3.8 1-3.8-1-.2-2.5h3l.1.8.9.3.9-.3.2-1.5H7.4L7 6Z" />
+            </svg>
+            <span>CSS</span>
+          </div>
+          <div class="skill-card skill-card--js">
+            <svg class="skill-icon skill-icon--js" viewBox="0 0 24 24" role="img" aria-label="JavaScript" tabindex="0">
+              <rect x="2" y="2" width="20" height="20" rx="1" />
+              <path d="M13 17.5c.5.8 1.2 1.2 2.2 1.2.9 0 1.5-.4 1.5-1 0-.7-.6-.9-1.6-1.3l-.5-.2c-1.5-.6-2.5-1.3-2.5-2.8 0-1.4 1.1-2.5 2.9-2.5 1.3 0 2.3.5 3 1.6l-1.5 1c-.3-.5-.7-.8-1.4-.8-.6 0-1 .3-1 .7 0 .5.4.7 1.4 1.1l.5.2c1.7.7 2.7 1.4 2.7 3 0 1.7-1.4 2.7-3.5 2.7-1.9 0-3.1-.9-3.7-2l1.5-.9ZM8 11h2v5.5c0 1.6-.7 2.3-2.2 2.3-1.1 0-1.8-.5-2.3-1.2l1.4-1c.3.4.5.6.9.6s.6-.2.6-.8V11Z" />
+            </svg>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualifications" id="qualificacoes" aria-labelledby="titulo-qualificacoes">
+        <div class="section-heading">
+          <p class="eyebrow">Minha jornada</p>
+          <h2 id="titulo-qualificacoes">Qualificações</h2>
+        </div>
+        <div class="qualification-list">
+          <article class="qualification-card">
+            <span class="qualification-card__number">01</span>
+            <h3>Desenvolvimento web</h3>
+            <p>Base em HTML, CSS e JavaScript para criar páginas responsivas e experiências digitais.</p>
+          </article>
+          <article class="qualification-card">
+            <span class="qualification-card__number">02</span>
+            <h3>Aprendizado contínuo</h3>
+            <p>Estudo constante, prática em projetos e disposição para aprender novas tecnologias.</p>
+          </article>
+          <article class="qualification-card">
+            <span class="qualification-card__number">03</span>
+            <h3>Organização e colaboração</h3>
+            <p>Comunicação, responsabilidade e atenção aos detalhes para trabalhar bem em equipe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="sobre" aria-labelledby="titulo-sobre">
+        <figure class="profile-photo">
+          <img src="./image/wendel-profile.png" alt="Foto de Wendel" />
+        </figure>
+        <div class="about__content">
+          <div class="section-heading">
+            <p class="eyebrow">Quem sou</p>
+            <h2 id="titulo-sobre">Sobre mim</h2>
+          </div>
+          <div class="about__copy">
+            <p>Meu nome é Wendel e estou construindo minha trajetória no mundo da tecnologia. Minha curiosidade por TI começou em 2021 no último ano do ensino médio que foi quando percebi como algumas linhas de código podem transformar uma ideia em algo que qualquer pessoa consegue usar.</p>
+            <p>Desde então, venho estudando desenvolvimento web e outras tecnologias, praticando todos os dias e buscando entender não apenas como criar uma interface, mas também como tornar cada experiência mais clara, útil e humana.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="traits" aria-labelledby="titulo-caracteristicas">
+        <div class="section-heading">
+          <p class="eyebrow">Minhas habilidades</p>
+          <h2 id="titulo-caracteristicas">Técnicas e comportamentais</h2>
+        </div>
+        <div class="traits__columns">
+          <div class="traits__group">
+            <h3>Técnicas</h3>
+            <ul><li>Raciocínio lógico</li><li>Interfaces responsivas</li><li>Semântica e acessibilidade</li><li>Curiosidade tecnológica</li><li>Formatação e configuração de computadores</li></ul>
+          </div>
+          <div class="traits__group">
+            <h3>Comportamentais</h3>
+            <ul><li>Proatividade</li><li>Comprometimento</li><li>Boa comunicação</li><li>Persistência para resolver problemas</li><li>Comunicação assertiva</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção destinada aos trabalhos que você criará ou já criou. -->
+      <section class="projects" id="projetos" aria-labelledby="titulo-projetos">
+        <p class="eyebrow">Meus</p>
+        <h2 id="titulo-projetos">Projetos</h2>
+        <p class="projects__intro">Veja alguns projetos que desenvolvi durante meus estudos. Em breve, você poderá acessar cada um deles por aqui.</p>
+        <!-- Cada article é um conteúdo independente: depois inclua imagem, link e descrição. -->
+        <div class="project-list">
+          <article class="project-card project-card--one">
+            <img class="project-card__image" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Placa de circuito eletrônico representando tecnologia" />
+            <div class="project-card__content">
+              <h3>Lista de compras</h3>
+              <div class="project-card__links">
+                <a href="https://github.com/gtx300/lista-compras" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://lista-compras-amber.vercel.app/" target="_blank" rel="noopener noreferrer">Deploy</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--two">
+            <img class="project-card__image" src="https://images.unsplash.com/photo-1550745165-9bc0b252 ಸಂ?auto=format&fit=crop&w=900&q=80" alt="Controle de videogame representando um projeto de jogo" />
+            <div class="project-card__content">
+              <h3>Game Snake</h3>
+              <div class="project-card__links">
+                <a href="https://github.com/gtx300/game-snake" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://game-snake-two.vercel.app/" target="_blank" rel="noopener noreferrer">Deploy</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card project-card--three">
+            <div class="project-card__lock" aria-label="Projeto bloqueado">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="11" rx="2" />
+                <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                <circle cx="12" cy="15" r="1" />
+              </svg>
+            </div>
+            <div class="project-card__content">
+              <h3>Projeto 03</h3>
+              <p>Em criação.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé simples com identificação da página. -->
+    <footer><p class="footer__brand"><img src="icons/Logo_Alura_Include_(1).svg" alt="Logo Alura Include" /></p><small>Desenvolvido por Wendel</small></footer>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
